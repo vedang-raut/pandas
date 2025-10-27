@@ -1,6 +1,6 @@
 import pandas as pd
 pd.__version__
-sales = pd.Series([2,None,4,5])  #This is used to create the series of data which can inside the list or tuple
+#sales = pd.Series([2,None,4,5])  #This is used to create the series of data which can inside the list or tuple
 #print(sales)
 
 #print(sales[0]) This is called indexing in which the a particular index data is fetched.
@@ -33,6 +33,15 @@ print(sales1.dtype)'''
 #sales*2
 #print(sales*2)
 
-print(sales.isnull())
+#print(sales.isnull())
 
-print(sales.fillna(0))
+#print(sales.fillna(0))
+
+
+
+sales3=pd.Series(data=[2,2,3,4,5],index=list('abcde'))
+print(sales3)
+
+
+
+
