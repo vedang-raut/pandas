@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 sales=pd.DataFrame({
     "Names":["Dmart","Croma","Reliance"],
     "Popularity":["High","Medium","Low"]
@@ -23,4 +24,21 @@ companies=pd.DataFrame({
 #This is using the condition 
 (companies[companies["Salary"]>=12])
 
-print(companies.query('Salary>12'))
+(companies.query('Salary>12'))
+
+#companies.to_csv("Vedang.csv")
+Data=pd.read_csv("Vedang.csv")
+#print(Data)
+
+
+
+#Another way to create the dataframe 
+sales1=({ 
+    "Names":["a","b","c"],
+    "Salary":np.array([12,23,45]),
+    'city':"Palghar"
+
+})
+
+
+print(pd.DataFrame(sales1))
