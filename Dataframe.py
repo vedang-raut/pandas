@@ -44,7 +44,7 @@ Powerlifters=pd.DataFrame({
 
 #Powerlifters.loc[Powerlifters['Lifts']==260,250]=270
 
-
+#Powerlifters.loc[Powerlifters['lifts']]
 Powerlifters.rename(columns={"Names":"Giants"},inplace=True)
 
 
@@ -56,6 +56,17 @@ Powerlifters.rename(columns={"Names":"Giants"},inplace=True)
 
 
 Powerlifters["GYM"]=["SSF","DJFC","EXplore","Tauras"]
-#print(Powerlifters)
+#
 
-print(Powerlifters[Powerlifters["Lifts"]>200])
+#print(Powerlifters[Powerlifters["Lifts"]>200])
+
+
+
+
+#print(Powerlifters[Powerlifters['Lifts']>200])
+Powerlifters.rename(columns={"GYM":"Akada"},inplace=True)
+
+
+Powerlifters.loc[Powerlifters["Akada"]=="SSF","Akada"]="sujit"
+
+print(Powerlifters)
