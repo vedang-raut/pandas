@@ -15,4 +15,25 @@ School=pd.DataFrame({
 School['Number']=School['Number'].astype(float)
 
 School['Marks']=School['Marks'].str.lower()
-print(School)
+#print(School)
+
+
+
+
+
+Gym=pd.DataFrame({
+    "Names":["Rupam","Manav","Aakash"],
+    "Exercise":["Deadlift","Overall","Overall"],
+    "Highest":[260,200,150]
+})
+
+#print(Gym.set_index("Exercise",inplace=True))
+
+#print(Gym.reset_index(inplace=True))
+
+#print(Gym.query("Highest>=200"))
+#print(Gym[Gym["Highest"]>150])
+
+#data=Gym.to_csv("lifters.csv")
+data=pd.read_csv("lifters.csv")
+print(data)
