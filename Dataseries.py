@@ -44,4 +44,4 @@ print(sales3)
 
 
 
-
+print(sales3.fillna(0))

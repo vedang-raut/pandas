@@ -41,4 +41,6 @@ sales1=({
 })
 
 
-print(pd.DataFrame(sales1))
+
+#print(pd.DataFrame(sales1))
+print(companies[companies["Salary"]>12])

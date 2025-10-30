@@ -24,3 +24,6 @@ GYM.rename(columns={"place":"Locationarea"},inplace=True)
 
 GYM.loc[GYM["Names"]=="Rupam","Names"]="simpleshotz"
 print(GYM) 
+
+
+
