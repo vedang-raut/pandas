@@ -56,4 +56,21 @@ School=pd.DataFrame({
 #print(School.dropna())
 #print(School.drop_duplicates())
 #print(School.replace("Vedang","raut"))
-print(School["Name"].str.lower())
+#print(School["Name"].str.lower())
+
+#lets now handle the missing data
+
+
+Gym=pd.DataFrame({
+    "Names":["Rupam","Manav","Aakash","Rupam"],
+    "Exercise":["Deadlift","Overall","Overall","Deadlift"],
+    "Highest":[260,200,150,260]
+
+})
+
+#print(Gym.dropna())
+#print(Gym.drop_duplicates())
+#print(Gym.replace("Rupam","Simpleshotz"))
+
+Gym["Names"]=Gym["Names"].str.lower()
+print(Gym)
