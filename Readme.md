@@ -7,3 +7,4 @@ The repo is added with the dataframe
 
 Date:2/11/2025
 I am learning mysql for the interview
+still learning the database
